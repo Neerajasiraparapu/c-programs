@@ -24,3 +24,28 @@ int main(){
         cout<<"Not an Automorphic Number";
     }
 }
+
+
+
+
+
+second code : using count
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,count=0,sq=0;
+    cin>>n;
+    int num=n;
+    sq=n*n;
+    while(n){
+        n/=10;
+        count++;
+    }
+    int m=pow(10,count);
+    if((sq%m)==num){
+        cout<<"Automorphic Number";
+    }
+    else{
+        cout<<"Not an Automorphic Number";
+    }
+}
